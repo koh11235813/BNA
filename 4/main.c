@@ -66,7 +66,7 @@ int main(void)
     S = 0;
     b = -x;
 	for (n = 10; n <= 1e+7; n *= 10){
-		S = SimpInt(n, x, b, v);
+		S = SimpInt(n, b, x, v);
 		printf("n = %8d Simpson = %lf\n",n ,1 - S);
 	}
 
